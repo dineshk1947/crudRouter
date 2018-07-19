@@ -1,0 +1,13 @@
+<a routerLink="/product" (click)="fetchData()">+ add new</a>
+<a routerLink="/user-details" (click)="fetchData()">user-details</a>
+<h1>Product info</h1>
+<table>
+  <th>id</th>
+  <th>name</th>
+  <th>color</th>
+<tr *ngFor ="let product of products">
+  <td>{{product.id}}</td>
+  <td>{{product.name}}</td>
+  <td>{{product.color}}</td>
+</tr>
+</table>
